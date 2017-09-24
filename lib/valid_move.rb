@@ -1,13 +1,15 @@
 # code your #valid_move? method here
 def valid_move?(board, index)
+
    if board.length==0 || index<0 || board[index]==nil
      return false
    elsif (index>=0 && index<9)
-     if  board[index]=="X" || board[index]=="O"
-       return false
-     elsif board[index]==" " || board[index]==""
-        return true
-     else return false
+        if  board[index]=="X" || board[index]=="O"
+            return false
+        elsif board[index]==" " || board[index]==""
+            return true
+        else return false
+        end
    else
      return false
    end
