@@ -17,6 +17,6 @@ end
 def position_taken?(board, number)
   index=number.to_i
   if valid_move?(board,index)
-     return false 
+     return false
   end
 end
